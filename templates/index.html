@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lebron or Kareem?</title>
+        <link rel="stylesheet" href="../static/index.css">
+    </head>
+    <body>
+        <section>
+           <div class="container">
+                <h1 style="font-size: 400%">Enter NBA player name below!</h1>
+                {% if message %}
+                    <p class='message'>{{message | safe}}</p>
+                {% endif %}
+                <form action = "{{ url_for('submit') }}" method = "POST">
+                    <p><input type = "text" name = "player-name" class="round" placeholder= "Enter full name" required/></p>
+                    <input type="submit" value="Submit" class="btn" />
+                </form>
+           </div>
+        </section>
+     </body>
+</html>
