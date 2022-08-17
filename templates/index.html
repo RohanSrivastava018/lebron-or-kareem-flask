@@ -15,8 +15,7 @@
                     <p class='message'>{{message | safe}}</p>
                 {% endif %}
                 <form action = "{{ url_for('submit') }}" method = "POST">
-                    <p><input type = "text" name = "player-name" class="round" placeholder= "Enter full name" required/></p>
-                    <input type="submit" value="Submit" class="btn" />
+                    <p><input type = "text" name = "player-name" class="round" placeholder= "Enter full name" required/></p> 
                 </form>
            </div>
         </section>

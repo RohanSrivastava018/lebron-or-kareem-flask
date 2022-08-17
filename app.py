@@ -1,7 +1,13 @@
 from email import message
 from flask import Flask, render_template, request
-from itsdangerous import NoneAlgorithm
 from values import getValues
+
+# to enter environment (lebron-or-kareem)
+# run: $ pipenv shell
+
+# to exit environment
+# run: $ pipenv exit
+
 
 app = Flask(__name__)
 
